@@ -1,0 +1,233 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Poppins-bold";
+  src: url("/assets/fonts/Poppins-SemiBold.woff2");
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(247, 247, 247);
+}
+
+.home {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/assets/images/hilma-hero.webp");
+  background-position: center;
+}
+
+.intro {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Poppins";
+  font-weight: 900;
+  color: white;
+  font-size: 35px;
+  --total-time: 1.5s;
+}
+
+p {
+  font-family: "Poppins";
+  color: rgb(36, 71, 82);
+  font-weight: bold;
+}
+
+.block-reveal {
+  margin: 5px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.block-reveal:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: scaleX(0);
+  transform-origin: top left;
+  background-color: var(--bg);
+  z-index: 1;
+  animation: animateIn var(--total-time) ease forwards var(--delay),
+    animateOut var(--total-time) ease forwards
+      calc(var(--total-time) + var(--delay));
+}
+
+.block-reveal .text {
+  opacity: 0;
+  animation: animateText var(--total-time) ease forwards calc(var(--total-time));
+}
+
+.first {
+  --bg: rgb(233, 176, 165);
+  --delay: 0s;
+}
+
+.second {
+  --bg: rgb(193, 201, 203);
+  --delay: 0.6s;
+}
+
+.hilma {
+  font-size: 130px;
+  font-family: meno-banner, serif;
+}
+
+.arrow {
+  height: 55px;
+  width: 55px;
+  animation: float 4s ease-in-out infinite;
+}
+
+.bottom {
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
+
+.top {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
+
+.logo {
+  height: 140px;
+  width: 140px;
+  animation: floatlogo 4s ease-in;
+}
+
+button {
+  color: rgb(36, 71, 82);
+  background-color: white;
+  font-weight: lighter;
+  font-family: "Poppins";
+  border: none;
+  padding: 10px;
+  width: 150px;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+@keyframes animateIn {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes animateOut {
+  from {
+    transform-origin: top right;
+    transform: scaleX(1) translateX(0);
+  }
+
+  to {
+    transform-origin: top right;
+    transform: scaleX(1) translateX(100%);
+  }
+}
+
+@keyframes animateText {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0%);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translatey(-10%);
+    opacity: 1;
+  }
+  100% {
+    transform: translatey(0%);
+    opacity: 0.5;
+  }
+}
+
+@keyframes floatlogo {
+  0% {
+    transform: translatey(-20%);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translatey(8%);
+    opacity: 0.6;
+  }
+  70% {
+    transform: translatey(-1%);
+    opacity: 0.7;
+  }
+  80% {
+    transform: translatey(0%);
+    opacity: 0.8;
+  }
+  90% {
+    transform: translatey(0%);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translatey(0%);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    margin: 0;
+  }
+  .home {
+    background-size: cover;
+    background-position: center, center;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .hilma {
+    font-size: 40px;
+  }
+  button {
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,58 @@
+.footrow {
+  background-color: white;
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.footrow > div {
+  flex: 50%;
+}
+
+.footcol.one {
+  padding-left: 150px;
+  padding-top: 60px;
+}
+
+.footcol.two {
+  padding-right: 150px;
+  padding-top: 60px;
+  text-align: right;
+}
+
+p.footer {
+  padding-top: 0;
+}
+
+.logogr {
+  height: 150px;
+  width: 150px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.small {
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+
+.arrowgr {
+  height: 60px;
+  width: 60px;
+}
+
+@media (max-width: 800px) {
+  .footrow {
+    height: 80vh;
+    flex-direction: column;
+  }
+  .footcol.one {
+    padding: 20px;
+  }
+  .footcol.two {
+    padding: 20px;
+    text-align: left;
+  }
+}
