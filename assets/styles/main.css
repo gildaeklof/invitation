@@ -5,32 +5,26 @@
   margin-bottom: 100px;
 }
 
-.mainrow-1 > div {
-  flex: 50%;
-}
-
 .mainrow-2 {
   display: flex;
   flex-direction: row;
   margin-bottom: 150px;
 }
 
+.mainrow-1 > div,
 .mainrow-2 > div {
   flex: 50%;
 }
 
-.maincol.one {
+.maincol.one,
+.maincol.four {
   display: flex;
   justify-content: center;
+  padding-right: 20px;
 }
 
 .maincol.three {
   padding-left: 110px;
-}
-
-.maincol.four {
-  display: flex;
-  justify-content: center;
 }
 
 .img-p {
@@ -64,16 +58,51 @@ h3 {
   font-family: "Poppins";
   color: rgb(36, 71, 82);
   font-size: 15px;
-  font-weight: bold;
 }
 
-.event-info {
+.event-div {
   background-color: white;
   padding: 20px;
   width: 30vw;
   height: 70vh;
   border: 1px;
   box-shadow: 0px 3px 15px rgba(94, 94, 94, 0.2);
+}
+
+.event-info {
+  padding: 50px 20px 50px 50px;
+}
+
+button.register {
+  background-color: rgb(36, 71, 82);
+  color: white;
+  font-weight: lighter;
+  font-family: "Poppins";
+  border: none;
+  padding: 10px;
+  width: 150px;
+  cursor: pointer;
+  display: block;
+  margin-top: 10px;
+}
+label {
+  position: absolute;
+  top: -1000px;
+  left: -1000px;
+}
+
+.tiny {
+  font-size: 11px;
+}
+
+a {
+  color: rgb(36, 71, 82);
+}
+
+input[type="email"] {
+  padding: 12px 20px;
+  font-family: "Poppins";
+  width: 250px;
 }
 
 .bold {
@@ -89,17 +118,26 @@ h3 {
     flex-direction: column;
     margin-bottom: 60px;
   }
-  .event-info {
+  .event-div {
     width: 70vw;
-    height: 50vh;
+    height: 60vh;
     margin-top: 60px;
     margin-bottom: 0px;
   }
-  .maincol.two {
-    padding-left: 55px;
+  .event-info {
+    padding: 0;
+    font-size: 13px;
   }
+  input[type="email"] {
+    width: 200px;
+  }
+  .maincol.two,
   .maincol.three {
     padding-left: 55px;
+  }
+  .maincol.one,
+  .maincol.four {
+    padding-left: 20px;
   }
   .main-img {
     width: 70vw;

@@ -124,7 +124,7 @@ p {
   animation: floatlogo 4s ease-in;
 }
 
-button {
+button.redirect {
   color: rgb(36, 71, 82);
   background-color: white;
   font-weight: lighter;

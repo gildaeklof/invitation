@@ -158,7 +158,7 @@
             <span class="text hilma">Hilma af Klint</span>
           </span>
         </h1>
-        <button>Anmäl dig nu</button>
+        <button class="redirect">Anmäl dig nu</button>
         <div class="bottom">
           <svg
             class="arrow"
@@ -209,9 +209,11 @@
       </div>
       <div class="mainrow-1">
         <div class="maincol one">
-          <div class="event-info">
-            <h3>Datum och tid</h3>
-            <h3>Lördag 10 april kl 13:00</h3>
+          <div class="event-div">
+            <div class="event-info">
+              <h3>Datum och tid</h3>
+              <h2 class="bold">Lördag, 10 april kl 13:00</h2>
+            </div>
           </div>
         </div>
         <div class="maincol two">
@@ -240,8 +242,32 @@
           </p>
         </div>
         <div id="signup" class="maincol four">
-          <div class="event-info">
-            <h3>Anmälan</h3>
+          <div class="event-div">
+            <div class="event-info">
+              <h3>Anmälan</h3>
+              <p>
+                För att anmäla dig till vår digitala utställning av Hilma af
+                Klint behöver du ange din e-postadress. När du har skickat din
+                anmälan kommer du att få ett mejl till din angivna e-postadress
+                med länk till utställningen.
+              </p>
+              <input
+                name="email"
+                id="email"
+                type="email"
+                placeholder="Ange din e-postadress"
+              />
+              <label for="email">hallå</label>
+              <button class="register">Skicka din anmälan</button>
+              <p class="tiny">
+                Göteborgs konstmuseum är en del av Göteborgs Stads
+                kulturförvaltning.
+                <a
+                  href="https://goteborgskonstmuseum.se/sa-behandlar-vi-dina-personuppgifter/"
+                  >Såhär behandlar vi dina personuppgifter.</a
+                >
+              </p>
+            </div>
           </div>
         </div>
       </div>
