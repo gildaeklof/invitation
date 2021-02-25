@@ -38,14 +38,14 @@
 
 h2 {
   font-family: meno-banner, serif;
-  color: rgb(36, 71, 82);
+  color: var(--blue);
   font-size: 3em;
   margin-bottom: 20px;
 }
 
 h3 {
   font-family: "Poppins-bold";
-  color: rgb(36, 71, 82);
+  color: var(--blue);
 }
 
 .info {
@@ -56,7 +56,7 @@ h3 {
 
 .infop {
   font-family: "Poppins";
-  color: rgb(36, 71, 82);
+  color: var(--blue);
   font-size: 15px;
 }
 
@@ -74,7 +74,7 @@ h3 {
 }
 
 button.register {
-  background-color: rgb(36, 71, 82);
+  background-color: var(--blue);
   color: white;
   font-weight: lighter;
   font-family: "Poppins";
@@ -96,7 +96,7 @@ label {
 }
 
 a {
-  color: rgb(36, 71, 82);
+  color: var(--blue);
 }
 
 input[type="email"] {

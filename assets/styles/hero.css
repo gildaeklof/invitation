@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "Poppins-bold";
-  src: url("/assets/fonts/Poppins-SemiBold.woff2");
+  src: url("/assets/fonts/Poppins-SemiBold.woff2") format("woff2");
 }
 
 * {
@@ -13,9 +13,14 @@
   scroll-behavior: smooth;
 }
 
+:root {
+  --blue: rgb(36, 71, 82);
+  --beige: rgb(247, 247, 247);
+}
+
 body {
   margin: 0;
-  background-color: rgb(247, 247, 247);
+  background-color: var(--beige);
 }
 
 .home {
@@ -41,7 +46,6 @@ body {
 
 h1 {
   font-family: "Poppins";
-  font-weight: 900;
   color: white;
   font-size: 35px;
   --total-time: 1.5s;
@@ -49,7 +53,7 @@ h1 {
 
 p {
   font-family: "Poppins";
-  color: rgb(36, 71, 82);
+  color: var(--blue);
   font-weight: bold;
 }
 
@@ -124,8 +128,13 @@ p {
   animation: floatlogo 4s ease-in;
 }
 
+.logo path,
+.arrow path {
+  fill: #fff;
+}
+
 button.redirect {
-  color: rgb(36, 71, 82);
+  color: var(--blue);
   background-color: white;
   font-weight: lighter;
   font-family: "Poppins";
@@ -231,3 +240,10 @@ button:focus {
     margin-top: 40px;
   }
 }
+/*<defs>
+              <style>
+                .cls-1 {
+                  fill: #fff;
+                }
+              </style>
+            </defs>*/
