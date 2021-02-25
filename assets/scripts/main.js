@@ -1,5 +1,11 @@
-const button = document.querySelector("button");
+const footbutton = document.querySelector(".redirect");
 
-button.addEventListener("click", () => {
+footbutton.addEventListener("click", () => {
   window.location.href = "#signup";
+});
+
+const topbutton = document.querySelector(".arrowgr");
+
+topbutton.addEventListener("click", () => {
+  window.location.href = "#main";
 });

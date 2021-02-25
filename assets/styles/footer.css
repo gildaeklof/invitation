@@ -46,6 +46,7 @@ p.footer {
   margin-top: 20px;
   height: 60px;
   width: 60px;
+  cursor: pointer;
 }
 
 @media (max-width: 800px) {
