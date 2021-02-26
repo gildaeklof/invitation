@@ -7,6 +7,7 @@
 
 .footrow > div {
   flex: 50%;
+  line-height: 80%;
 }
 
 .footcol.one {
@@ -18,10 +19,6 @@
   padding-right: 150px;
   padding-top: 60px;
   text-align: right;
-}
-
-p.footer {
-  padding-top: 0;
 }
 
 .logogr {

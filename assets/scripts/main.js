@@ -1,11 +1,16 @@
-const footbutton = document.querySelector(".redirect");
+const goDown = document.querySelector(".redirect");
+const goUp = document.querySelector(".arrowgr");
+const arrow = document.querySelector(".arrow");
 
-footbutton.addEventListener("click", () => {
+goDown.addEventListener("click", () => {
   window.location.href = "#signup";
 });
 
-const topbutton = document.querySelector(".arrowgr");
-
-topbutton.addEventListener("click", () => {
+goUp.addEventListener("click", () => {
   window.location.href = "#main";
 });
+
+/*function showArrow() {
+  arrow.style.visibility = "visible";
+}
+setTimeout("showArrow()", 3000);*/

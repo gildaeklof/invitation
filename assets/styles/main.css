@@ -36,6 +36,35 @@
   width: 40vw;
 }
 
+.quote-div {
+  height: 60vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.quote {
+  padding: 20px 150px 50px 250px;
+  background-color: white;
+  width: 90vw;
+  height: 50vh;
+  box-shadow: 0px 3px 15px rgba(94, 94, 94, 0.2);
+}
+
+.red {
+  color: var(--red);
+  font-family: meno-banner, serif;
+  font-weight: lighter;
+  line-height: 130%;
+  font-size: 2em;
+  font-style: italic;
+}
+
+img.red-quote {
+  width: 50px;
+  transform: translate(-70px, 70px);
+}
+
 h2 {
   font-family: meno-banner, serif;
   color: var(--blue);
@@ -46,6 +75,7 @@ h2 {
 h3 {
   font-family: "Poppins-bold";
   color: var(--blue);
+  margin-bottom: 0px;
 }
 
 .info {
@@ -109,9 +139,33 @@ input[type="email"] {
   font-family: "Poppins-bold";
 }
 
+.line {
+  fill: none;
+  stroke: #244752;
+  stroke-miterlimit: 10;
+  stroke-width: 4px;
+  width: 350px;
+  transform: translateX(-25px);
+}
+
 @media (max-width: 800px) {
+  .quote-div {
+    margin-top: 60px;
+  }
+  .quote {
+    width: 70vw;
+    padding: 20px 30px 20px 30px;
+  }
+  .red {
+    font-size: 1em;
+  }
+  img.red-quote {
+    transform: translateY(-2px);
+    width: 40px;
+  }
   .mainrow-1 {
     flex-direction: column-reverse;
+    margin-top: 0px;
     margin-bottom: 60px;
   }
   .mainrow-2 {
@@ -127,6 +181,9 @@ input[type="email"] {
   .event-info {
     padding: 0;
     font-size: 13px;
+  }
+  .event-div.two {
+    height: 70vh;
   }
   input[type="email"] {
     width: 200px;
@@ -152,5 +209,9 @@ input[type="email"] {
   }
   h2 {
     font-size: 30px;
+  }
+  .line {
+    width: 250px;
+    transform: translateX(-17px);
   }
 }
