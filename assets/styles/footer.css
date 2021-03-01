@@ -26,6 +26,10 @@
   width: 140px;
 }
 
+.logogr-2 {
+  display: none;
+}
+
 .logogr path {
   fill: #244752;
 }
@@ -40,7 +44,7 @@
 }
 
 .arrowgr {
-  margin-top: 20px;
+  margin-top: 30px;
   height: 60px;
   width: 60px;
   cursor: pointer;
@@ -48,24 +52,31 @@
 
 @media (max-width: 800px) {
   .footrow {
-    height: 80vh;
+    height: 65vh;
     flex-direction: column;
   }
   .footcol.one {
-    padding: 20px;
+    padding: 40px 20px 0px 20px;
+    margin-bottom: 0px;
   }
   .footcol.two {
-    padding: 0px 20px 0px 20px;
+    padding: 0px 20px 40px 20px;
     text-align: left;
+    background-color: white;
   }
   .logogr {
-    height: 100px;
+    display: none;
+  }
+  .logogr-2 {
+    display: inline-block;
     width: 100px;
+    height: 100px;
   }
   .arrowgr {
-    height: 30px;
+    height: 40px;
+    transform: translate(170px, -35px);
   }
   .footrow p {
-    font-size: 14px;
+    font-size: 12px;
   }
 }

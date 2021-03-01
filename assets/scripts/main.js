@@ -22,3 +22,9 @@ regButton.addEventListener("click", () => {
   arrow.style.visibility = "visible";
 }
 setTimeout("showArrow()", 3000);*/
+
+const mediaQuery = window.matchMedia("(max-width: 800px)");
+
+if (mediaQuery.matches) {
+  console.log("Media Query Matched!");
+}

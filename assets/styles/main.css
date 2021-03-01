@@ -70,6 +70,7 @@ h2 {
   color: var(--blue);
   font-size: 3em;
   margin-bottom: 20px;
+  margin-top: 0px;
 }
 
 h3 {
