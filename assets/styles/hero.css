@@ -105,6 +105,7 @@ p {
   height: 55px;
   width: 55px;
   /*visibility: hidden;*/
+  cursor: pointer;
   animation: float 4s ease-in-out infinite;
 }
 
@@ -144,6 +145,12 @@ button.redirect {
   padding: 10px;
   width: 150px;
   cursor: pointer;
+  transition: 0.5s;
+}
+
+button.redirect:hover {
+  background-color: rgb(226, 138, 144);
+  color: white;
 }
 
 button:focus {

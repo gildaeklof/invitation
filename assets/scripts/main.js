@@ -11,6 +11,10 @@ goDown.addEventListener("click", () => {
   window.location.href = "#signup";
 });
 
+arrow.addEventListener("click", () => {
+  window.location.href = "#main";
+});
+
 goUp.addEventListener("click", () => {
   window.location.href = "#main";
 });
