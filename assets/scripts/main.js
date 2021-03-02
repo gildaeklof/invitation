@@ -15,6 +15,14 @@ goUp.addEventListener("click", () => {
   window.location.href = "#main";
 });
 
+setTimeout(() => {
+  history.replaceState(
+    "",
+    document.title,
+    window.location.origin + window.location.pathname + window.location.search
+  );
+}, 1);
+
 regButton.addEventListener("click", () => {
   signUp.innerHTML =
     "Tack för din anmälan!<br><br> Din anmälan är mottagen och du kommer få ett mejl med mer info inom kort.";
