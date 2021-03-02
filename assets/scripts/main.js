@@ -3,8 +3,8 @@ const goUp = document.querySelector(".arrowgr");
 const arrow = document.querySelector(".arrow");
 const regButton = document.querySelector(".register");
 const signUp = document.querySelector(".signup-info");
-const content = document.querySelector(".dynamic-content");
-const content2 = document.querySelector(".dynamic-content-2");
+const dynamicName = document.querySelector(".dynamic-name");
+const dynamicEmail = document.querySelector(".dynamic-email");
 
 goDown.addEventListener("click", () => {
   window.location.href = "#signup";
@@ -40,5 +40,9 @@ function getUrlParameter(name) {
     : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
 
-content.innerHTML = getUrlParameter("name");
-content2.setAttribute("value", getUrlParameter("email"));
+function capitalize(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+dynamicName.innerHTML = capitalize(getUrlParameter("name"));
+dynamicEmail.setAttribute("value", getUrlParameter("email"));
