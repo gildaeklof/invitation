@@ -3,6 +3,7 @@ const goUp = document.querySelector(".arrowgr");
 const arrow = document.querySelector(".arrow");
 const regButton = document.querySelector(".register");
 const signUp = document.querySelector(".signup-info");
+const content = document.querySelector(".dynamic-content");
 
 goDown.addEventListener("click", () => {
   window.location.href = "#signup";
@@ -28,3 +29,14 @@ const mediaQuery = window.matchMedia("(max-width: 800px)");
 if (mediaQuery.matches) {
   console.log("Media Query Matched!");
 }
+
+function getUrlParameter(name) {
+  name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+  var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
+  var results = regex.exec(location.search);
+  return results === null
+    ? ""
+    : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+content.innerHTML = getUrlParameter("name");
