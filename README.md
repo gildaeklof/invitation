@@ -1,4 +1,4 @@
-# Event invitation landing page
+# Event invitation
 
 This project is a collaboration with the IP Graphical Production & Form program at Yrgo. The assignment was to create an event invitation in the form of a landing page as well as physical printed invitations.
 
