@@ -4,6 +4,7 @@ const arrow = document.querySelector(".arrow");
 const regButton = document.querySelector(".register");
 const signUp = document.querySelector(".signup-info");
 const content = document.querySelector(".dynamic-content");
+const content2 = document.querySelector(".dynamic-content-2");
 
 goDown.addEventListener("click", () => {
   window.location.href = "#signup";
@@ -40,3 +41,4 @@ function getUrlParameter(name) {
 }
 
 content.innerHTML = getUrlParameter("name");
+content2.setAttribute("value", getUrlParameter("email"));

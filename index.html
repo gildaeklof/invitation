@@ -23,6 +23,8 @@
         <div class="top">
           <img class="logo" src="assets/images/logga-vit.svg" />
         </div>
+        <p>Välkommen <span class="dynamic-content"></span>!</p>
+        <!--<p>Du kommer från <span class="dynamic-content-2"></span></p>-->
         <h1>
           <span class="block-reveal first">
             <span class="text">Digital utställning av</span>
@@ -31,7 +33,6 @@
             <span class="text hilma">Hilma af Klint</span>
           </span>
         </h1>
-        <p>Välkommen <span class="dynamic-content"></span>!</p>
         <button class="redirect">Anmäl dig nu</button>
         <div class="bottom">
           <img class="arrow" src="assets/images/pil-vit.svg" />
@@ -130,8 +131,9 @@
                 name="email"
                 id="email"
                 type="email"
-                placeholder="Ange din e-postadress"
-              />
+                class="dynamic-content-2"
+                value=""
+              ></input>
               <label for="email">hallå</label>
               <button class="register">Skicka din anmälan</button>
               <p class="tiny">
