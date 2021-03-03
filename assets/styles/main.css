@@ -115,7 +115,14 @@ button.register {
   cursor: pointer;
   display: block;
   margin-top: 10px;
+  transition: 0.5s;
 }
+
+button.register:hover {
+  background-color: rgb(121, 148, 170);
+  color: white;
+}
+
 label {
   position: absolute;
   top: -1000px;
