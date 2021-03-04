@@ -3,9 +3,6 @@ const goUp = document.querySelector('.arrowgr');
 const arrow = document.querySelector('.arrow');
 const regButton = document.querySelector('.register');
 const signUp = document.querySelector('.signup-info');
-const dynamicName = document.querySelector('.dynamic-name');
-const dynamicEmail = document.querySelector('.dynamic-email');
-const welcome = document.querySelector('.welcome');
 
 goDown.addEventListener('click', () => {
   window.location.href = '#signup';
