@@ -79,3 +79,13 @@
     font-size: 12px;
   }
 }
+
+/* iphone x fix */
+@media only screen and (width: 375px) and (height: 812px) {
+  .footrow {
+    height: 55vh;
+  }
+  .footcol.two {
+    padding: 0px 20px 45px 20px;
+  }
+}
