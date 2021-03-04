@@ -53,15 +53,15 @@
 
 .slide-in {
   opacity: 0;
-  transition: all 1s;
+  transition: all 1.2s;
 }
 
 .align-left.slide-in {
-  transform: translateX(-30%) scale(0.95);
+  transform: translateX(-50%) scale(0.95);
 }
 
 .align-right.slide-in {
-  transform: translateX(30%) scale(0.95);
+  transform: translateX(50%) scale(0.95);
 }
 
 .slide-in.active {
@@ -134,7 +134,7 @@ h3 {
 }
 
 .event-info {
-  padding: 50px 20px 50px 50px;
+  padding: 50px 30px 50px 50px;
 }
 
 button.register {

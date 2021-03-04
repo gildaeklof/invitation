@@ -104,7 +104,6 @@ p {
 .arrow {
   height: 55px;
   width: 55px;
-  /*visibility: hidden;*/
   cursor: pointer;
   animation: float 4s ease-in-out infinite;
 }
