@@ -23,17 +23,50 @@
   padding-right: 20px;
 }
 
+.maincol.two {
+  padding-right: 110px;
+  display: flex;
+  flex-direction: column;
+}
+
 .maincol.three {
   padding-left: 110px;
+  display: flex;
+  flex-direction: column;
 }
 
 .img-p {
-  padding-right: 10px;
   font-size: 12px;
 }
 
 .main-img {
   width: 40vw;
+}
+
+.align-left {
+  float: left;
+}
+
+.align-right {
+  float: right;
+}
+
+.slide-in {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.align-left.slide-in {
+  transform: translateX(-30%) scale(0.95);
+}
+
+.align-right.slide-in {
+  transform: translateX(30%) scale(0.95);
+}
+
+.slide-in.active {
+  opacity: 1;
+  transform: translateX(0%) scale(1);
 }
 
 .quote-div {
@@ -200,7 +233,6 @@ input[type='email'] {
   .maincol.two,
   .maincol.three,
   .maincol.four {
-    padding-left: 55px;
     display: flex;
     justify-content: center;
     flex-direction: column;

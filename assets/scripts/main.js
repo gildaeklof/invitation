@@ -33,17 +33,6 @@ regButton.addEventListener("click", () => {
   regButton.innerHTML = "Tack!";
 });
 
-/*function showArrow() {
-  arrow.style.visibility = "visible";
-}
-setTimeout("showArrow()", 3000);*/
-
-const mediaQuery = window.matchMedia("(max-width: 800px)");
-
-if (mediaQuery.matches) {
-  console.log("Media Query Matched!");
-}
-
 function getUrlParameter(name) {
   name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
   var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
@@ -63,3 +52,20 @@ dynamicEmail.setAttribute("value", getUrlParameter("email"));
 if (!getUrlParameter("name")) {
   welcome.style.display = "none";
 }
+
+const sliderDivs = document.querySelectorAll(".slide-in");
+
+function checkSlide() {
+  sliderDivs.forEach((sliderDiv) => {
+    const slideInAt =
+      window.scrollY + window.innerHeight - sliderDiv.offsetHeight / 3;
+    const divBottom = sliderDiv.offsetTop + sliderDiv.offsetHeight;
+    const isShown = slideInAt > sliderDiv.offsetTop;
+    const isNotScrolledPast = window.scrollY < divBottom;
+    if (isShown && isNotScrolledPast) {
+      sliderDiv.classList.add("active");
+    }
+  });
+}
+
+window.addEventListener("scroll", checkSlide);
