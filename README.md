@@ -8,7 +8,7 @@ The invitation is for a (fictional) digital exhibition featuring Swedish artist 
 
 ## Visit project
 
-TBA...
+[Preview](https://hilma-af-klint.netlify.app/?name=främling).
 
 ## Creators
 
