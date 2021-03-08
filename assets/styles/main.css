@@ -134,6 +134,10 @@ h2 {
   margin-top: 0px;
 }
 
+.date {
+  margin-top: 70px;
+}
+
 .event-heading {
   font-family: 'Poppins-bold';
   color: var(--blue);
