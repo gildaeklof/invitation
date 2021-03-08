@@ -261,18 +261,21 @@ input[type='email'] {
     flex-direction: column;
     margin-bottom: 60px;
   }
-  .event-div {
+  .event-div.one {
     width: 70vw;
-    height: 60vh;
+    height: 50vh;
     margin-top: 60px;
     margin-bottom: 0px;
+  }
+  .event-div.two {
+    width: 70vw;
+    height: 70vh;
+    margin-top: 60px;
+    margin-bottom: 40px;
   }
   .event-info {
     padding: 0;
     font-size: 13px;
-  }
-  .event-div.two {
-    height: 70vh;
   }
   input[type='email'] {
     width: 200px;
@@ -302,12 +305,15 @@ input[type='email'] {
   h2 {
     font-size: 30px;
   }
+  .date {
+    padding-left: 5px;
+    margin-top: 30px;
+  }
   .line {
     width: 250px;
     transform: translateX(-17px);
   }
   .line-long {
-    /*width: 270px;*/
     display: none;
   }
   .line-mobile {
@@ -322,8 +328,8 @@ input[type='email'] {
   .event-div.two {
     height: 57vh;
   }
-  .event-div {
-    height: 50vh;
+  .event-div.one {
+    height: 42vh;
   }
   .quote-div {
     height: 65vh;
