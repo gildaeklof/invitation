@@ -61,7 +61,7 @@ p {
 }
 
 .block-reveal {
-  margin: 10px;
+  margin: 0px;
   display: block;
   position: relative;
   overflow: hidden;
@@ -186,7 +186,7 @@ p {
 
 @keyframes floatlogo {
   0% {
-    transform: translatey(-20%);
+    transform: translatey(-70%);
     opacity: 0.3;
   }
   50% {
