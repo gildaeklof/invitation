@@ -35,6 +35,34 @@
   flex-direction: column;
 }
 
+.info-heading {
+  margin-top: 50px;
+  font-family: 'Poppins-bold';
+  color: var(--blue);
+}
+
+button.redirect {
+  color: white;
+  background-color: var(--blue);
+  font-weight: lighter;
+  font-family: 'Poppins';
+  border: none;
+  padding: 10px;
+  width: 150px;
+  cursor: pointer;
+  transition: 0.5s;
+  margin: 30px 0px 30px 0px;
+}
+
+button.redirect:hover {
+  background-color: rgb(226, 138, 144);
+  color: white;
+}
+
+button:focus {
+  outline: none;
+}
+
 .img-p {
   font-size: 12px;
 }
@@ -106,15 +134,14 @@ h2 {
   margin-top: 0px;
 }
 
-h3 {
+.event-heading {
   font-family: 'Poppins-bold';
   color: var(--blue);
   margin-bottom: 0px;
 }
 
 .info {
-  text-align: center;
-  padding: 100px 320px 100px 320px;
+  padding: 150px 320px 100px 320px;
   text-align: left;
 }
 
@@ -152,7 +179,7 @@ button.register {
 }
 
 button.register:hover {
-  background-color: rgb(121, 148, 170);
+  background-color: rgb(226, 138, 144);
   color: white;
 }
 
@@ -189,7 +216,24 @@ input[type='email'] {
   transform: translateX(-25px);
 }
 
+.line-long {
+  margin-top: 0px;
+  width: 800px;
+  transform: translateY(-25px);
+}
+
+.zero {
+  margin-top: 0px;
+}
+
+.line-mobile {
+  display: none;
+}
+
 @media (max-width: 800px) {
+  main {
+    overflow-x: hidden;
+  }
   .quote-div {
     margin-top: 60px;
   }
@@ -248,7 +292,8 @@ input[type='email'] {
     margin-bottom: 0px;
   }
   .info {
-    padding: 40px 70px 0px 70px;
+    margin-top: 30px;
+    padding: 40px 50px 0px 50px;
   }
   h2 {
     font-size: 30px;
@@ -256,6 +301,15 @@ input[type='email'] {
   .line {
     width: 250px;
     transform: translateX(-17px);
+  }
+  .line-long {
+    /*width: 270px;*/
+    display: none;
+  }
+  .line-mobile {
+    display: block;
+    transform: translate(-24px, -25px);
+    width: 320px;
   }
 }
 
