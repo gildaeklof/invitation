@@ -114,8 +114,8 @@ button:focus {
 
 .red {
   color: var(--red);
-  font-family: meno-banner, serif;
-  font-weight: lighter;
+  font-family: var(--georgia);
+  font-weight: 100;
   line-height: 130%;
   font-size: 2em;
   font-style: italic;
@@ -127,9 +127,9 @@ img.red-quote {
 }
 
 h2 {
-  font-family: meno-banner, serif;
+  font-family: var(--georgia);
   color: var(--blue);
-  font-size: 3em;
+  font-size: 2.5em;
   margin-bottom: 20px;
   margin-top: 0px;
 }
@@ -163,7 +163,9 @@ h2 {
   border: 1px;
   box-shadow: 0px 3px 15px rgba(94, 94, 94, 0.2);
 }
-
+.signup-info {
+  transition: opacity 0.5s ease-in-out;
+}
 .event-info {
   padding: 50px 30px 50px 50px;
 }
@@ -303,7 +305,7 @@ input[type='email'] {
     padding: 40px 50px 0px 50px;
   }
   h2 {
-    font-size: 30px;
+    font-size: 25px;
   }
   .date {
     padding-left: 5px;

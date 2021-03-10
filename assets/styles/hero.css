@@ -17,6 +17,7 @@
   --blue: rgb(36, 71, 82);
   --beige: rgb(247, 247, 247);
   --red: rgb(229, 94, 102);
+  --georgia: Georgia, 'Times New Roman', Times, serif;
 }
 
 body {
@@ -99,8 +100,8 @@ p {
 }
 
 .dynamic-name {
-  font-size: 130px;
-  font-family: meno-banner, serif;
+  font-size: 120px;
+  font-family: var(--georgia);
 }
 
 .arrow {
@@ -127,9 +128,9 @@ p {
 }
 
 .logo {
-  height: 140px;
-  width: 140px;
-  animation: floatlogo 4s ease-in;
+  height: 150px;
+  width: 150px;
+  animation: floatlogo 5s ease-in;
 }
 
 .logo path,
@@ -190,11 +191,11 @@ p {
     opacity: 0.3;
   }
   50% {
-    transform: translatey(8%);
+    transform: translatey(0%);
     opacity: 0.6;
   }
   70% {
-    transform: translatey(-1%);
+    transform: translatey(0%);
     opacity: 0.7;
   }
   80% {
