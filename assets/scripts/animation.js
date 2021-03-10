@@ -1,6 +1,7 @@
 const sliderDivs = document.querySelectorAll('.slide-in');
 const signUp = document.querySelector('.signup-info');
 const eventDiv = document.querySelector('.event-info');
+const regButton = document.querySelector('.register');
 
 function checkSlide() {
   sliderDivs.forEach((sliderDiv) => {

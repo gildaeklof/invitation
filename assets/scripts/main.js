@@ -1,7 +1,6 @@
 const goDown = document.querySelector('.redirect');
 const goUp = document.querySelector('.arrowgr');
 const arrow = document.querySelector('.arrow');
-const regButton = document.querySelector('.register');
 
 goDown.addEventListener('click', () => {
   window.location.href = '#signup';
