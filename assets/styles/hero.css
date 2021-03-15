@@ -228,3 +228,13 @@ p {
     font-size: 45px;
   }
 }
+
+/* ipad fix */
+@media only screen and (width: 768px) and (height: 1024px) {
+  h1 {
+    font-size: 45px;
+  }
+  .dynamic-name {
+    font-size: 65px;
+  }
+}

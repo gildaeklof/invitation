@@ -1,6 +1,6 @@
 .footrow {
   background-color: white;
-  height: 60vh;
+  height: 55vh;
   display: flex;
   flex-direction: row;
 }
@@ -69,7 +69,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .footrow {
     height: 65vh;
     flex-direction: column;
@@ -109,5 +109,42 @@
   }
   .footcol.two {
     padding: 0px 20px 45px 20px;
+  }
+  .arrowgr:hover {
+    animation: none;
+  }
+}
+
+/* ipad fix */
+@media only screen and (width: 768px) and (height: 1024px) {
+  .footrow {
+    height: 42vh;
+  }
+  .footcol.one {
+    padding: 50px;
+  }
+  .footcol.two {
+    line-height: inherit;
+    padding: 50px 50px 50px 0px;
+  }
+  .underline {
+    font-size: 15px;
+  }
+  .small {
+    margin: 0;
+  }
+  .credit {
+    margin-bottom: 0;
+  }
+  .copy {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .logogr,
+  .arrowgr {
+    transform: translateY(50px);
+  }
+  .arrowgr:hover {
+    animation: none;
   }
 }

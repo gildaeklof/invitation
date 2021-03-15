@@ -340,3 +340,21 @@ input[type='email'] {
     height: 45vh;
   }
 }
+
+/* ipad fix */
+@media only screen and (width: 768px) and (height: 1024px) {
+  .quote-div {
+    height: 40vh;
+  }
+  .quote {
+    height: 25vh;
+  }
+  .event-div.one {
+    padding: 40px;
+    height: 25vh;
+  }
+  .event-div.two {
+    padding: 40px;
+    height: 40vh;
+  }
+}
