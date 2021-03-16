@@ -115,19 +115,6 @@
   }
 }
 
-/* iphone 11 fix */
-@media only screen and (width: 414px) and (height: 896px) {
-  .footrow {
-    height: 50vh;
-  }
-  .logogr-2 {
-    transform: translateY(15px);
-  }
-  .arrowgr {
-    transform: translate(210px, -15px);
-  }
-}
-
 /* ipad fix */
 @media only screen and (width: 768px) and (height: 1024px) {
   .footrow {
