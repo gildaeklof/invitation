@@ -34,12 +34,6 @@
   flex-direction: column;
 }
 
-.info-heading {
-  margin-top: 50px;
-  font-family: 'Poppins-bold';
-  color: var(--blue);
-}
-
 button.redirect {
   color: white;
   background-color: var(--blue);
@@ -222,20 +216,6 @@ input[type='email'] {
   transform: translateX(-25px);
 }
 
-.line-long {
-  margin-top: 0px;
-  width: 800px;
-  transform: translateY(-25px);
-}
-
-.zero {
-  margin-top: 0px;
-}
-
-.line-mobile {
-  display: none;
-}
-
 @media (max-width: 800px) {
   main {
     overflow-x: hidden;
@@ -314,14 +294,6 @@ input[type='email'] {
   .line {
     width: 250px;
     transform: translateX(-17px);
-  }
-  .line-long {
-    display: none;
-  }
-  .line-mobile {
-    display: block;
-    transform: translate(-24px, -25px);
-    width: 320px;
   }
 }
 
