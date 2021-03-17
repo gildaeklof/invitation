@@ -22,7 +22,7 @@ regButton.addEventListener('click', () => {
   signUp.style.opacity = 0;
   setTimeout(function () {
     signUp.innerHTML =
-      'Tack för din anmälan!<br><br> Din anmälan är mottagen och du kommer få ett mejl med mer info inom kort.';
+      'Tack för din anmälan!<br>Din anmälan är mottagen och du kommer få ett mejl med mer info inom kort.';
     regButton.innerHTML = 'Tack!';
     signUp.style.opacity = 1;
   }, 400);
