@@ -271,7 +271,7 @@ input[type='email'] {
   }
   .event-div.two {
     width: 70vw;
-    height: 70vh;
+    height: 62vh;
     margin-top: 60px;
     margin-bottom: 40px;
   }
@@ -328,7 +328,7 @@ input[type='email'] {
 /* iphone x fix */
 @media only screen and (width: 375px) and (height: 812px) {
   .event-div.two {
-    height: 57vh;
+    height: 53vh;
   }
   .event-div.one {
     height: 42vh;
