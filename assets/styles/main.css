@@ -290,6 +290,7 @@ input[type='email'] {
   }
   h2 {
     font-size: 25px;
+    line-height: 150%;
   }
   .date {
     padding-left: 5px;
