@@ -16,8 +16,8 @@ The invitation is for a (fictional) digital exhibition featuring Swedish artist 
 - Hanna Pålsson (IP)
 
 ## Code Review 
-- index.html:180 - use the semantic element <footer> instead of <section class=“footer”> for better accessibility. 
-- index.html: 126 + 139 - use the semantic element <figcaption> instead of <p> when writing a caption for an image. 
+- index.html:180 - use the semantic element < footer > instead of < section class=“footer” > for better accessibility. 
+- index.html: 126 + 139 - use the semantic element < figcaption > instead of < p > when writing a caption for an image. 
 - great job splitting your css and javascript into separate files. one suggestion is to put your media queries in a separate file also so they are easer to find and read. 
 - It’s super hard finding anything to comment on! Your code looks great, your site looks amazing and the animations are perfect. Great job!  
 
