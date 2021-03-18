@@ -13,7 +13,7 @@ The invitation is for a (fictional) digital exhibition featuring Swedish artist 
 ## Creators :dancing_women:
 
 - [Gilda Eklöf](https://github.com/gildaeklof) (WU) :woman_technologist:
-- Hanna Pålsson (IP) :art:
+- [Hanna Pålsson](https://hannapalsson.se/) (IP) :art:
 
 ## Code Review :pencil2:
 
